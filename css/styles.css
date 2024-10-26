@@ -10,7 +10,10 @@
 :root {
     --bg-body: #242a32;
     --color-primary: #131119;
-    --text-color: #f4f3f3
+    --text-color: #f4f3f3;
+    --text-form: #92929d;
+    --star-yellow: #FFBB3a
+
 }
 
 html,
@@ -109,8 +112,71 @@ nav a {
         align-items: center;
         justify-content: center;
         border-radius: 50px;
+        border: 0;
 
     }
     .movies-btn:hover{
         background-color: rgb(0, 68, 255);
+    }
+
+    .score-container{
+        padding: 40px 0;
+        max-width: 480px;
+    }
+
+    .card-score-description{
+        background-color: var(--color-primary);
+        color: var(--text-color);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .movies-form-btn{
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .movies-form-group {
+        margin-bottom: 20px;
+    }
+
+    .movies-form-group label {
+        font-size: 12px;
+        color: var(--text-form);
+    }
+
+    .card-score-description h3 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .movies-card-description-star {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movies-card-description-star h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--star-yellow);
+    }
+
+    .movies-card-description-star img {
+            width: 22px;
+            margin-bottom: 10px;
+    }
+
+    .movies-card-description-star p {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--text-form);
+        margin-bottom: 10px;
     }
