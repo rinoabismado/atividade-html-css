@@ -180,3 +180,44 @@ nav a {
         color: var(--text-form);
         margin-bottom: 10px;
     }
+
+.movies-pagination-container{
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+    .movies-pagination-box {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .movies-pagination-box p {
+margin: 0;
+font-size: 12px;
+font-weight: 400;
+color: var(--text-color);
+    }
+
+
+
+    .movies-pagination-box button {
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--text-color);
+        background-color: var(--color-primary);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movies-pagination-box button:disabled {
+border: 1px solid var(--text-form);
+background-color: var(--bg-body);
+    }
+.movies-button-flip {
+    transform: rotate(180deg);
+}
